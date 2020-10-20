@@ -21,6 +21,12 @@
         <item name="colorOnSurface">@color/colorOnSurface</item>
         <item name="colorOnError">@color/colorOnError</item>
         <item name="colorOnBackground">@color/colorOnBackground</item>
+
+        <item name="android:textViewStyle">@style/NunitoTextStyle</item>
+    </style>
+
+    <style name="NunitoTextStyle" parent="android:Widget.TextView">
+        <item name="android:fontFamily">@font/nunito_regular</item>
     </style>
 
 </resources>

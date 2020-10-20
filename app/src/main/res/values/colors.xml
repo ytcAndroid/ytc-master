@@ -18,4 +18,6 @@
     <color name="colorOnBackground">#442B2D</color>
 
     <!-- Application Specific Colors -->
+
+    <color name="colorLightGrey">#F6F6F6</color>
 </resources>

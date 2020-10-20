@@ -14,6 +14,7 @@ import com.example.android.ytc.databinding.FragmentDemoContentABinding
 import com.example.android.ytc.ui.featurex.FeatureXActivity
 import com.example.android.ytc.ui.featurey.FeatureYActivity
 import com.example.android.ytc.ui.featurez.FeatureZActivity
+import com.example.android.ytc.ui.practice.PracticeActivity
 import dagger.hilt.android.AndroidEntryPoint
 import timber.log.Timber
 
@@ -72,6 +73,11 @@ class FragmentA : Fragment() {
         viewModel.featureZEvent.observe(viewLifecycleOwner, Observer {
             Timber.i("Launching feature Z activity.")
             startActivity(Intent(activity, FeatureZActivity::class.java))
+        })
+
+        viewModel.featurePractice.observe(viewLifecycleOwner, Observer {
+            Timber.i("Launch Practice activity.")
+            startActivity(Intent(activity, PracticeActivity::class.java))
         })
     }
 }

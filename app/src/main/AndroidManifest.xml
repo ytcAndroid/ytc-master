@@ -47,6 +47,14 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.android.ytc.ui.home.MainActivity" />
         </activity>
+        <activity
+            android:name=".ui.practice.PracticeActivity"
+            android:label="@string/title_practice"
+            android:parentActivityName=".ui.home.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.home.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
