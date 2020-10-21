@@ -9,4 +9,5 @@
 
     <string name="title_practice">Practice</string>
     <string name="practice_section_1">Ucapkan kalimat berikut ini</string>
+    <string name="speech_prompt">Katakan sesuatu</string>
 </resources>
