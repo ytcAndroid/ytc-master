@@ -13,9 +13,11 @@ class FragmentAViewModel @ViewModelInject constructor(
     private val _featureXEvent = LiveEvent<Unit>()
     private val _featureYEvent = LiveEvent<Unit>()
     private val _featureZEvent = LiveEvent<Unit>()
+    private val _featurePractice = LiveEvent<Unit>()
     val featureXEvent: LiveData<Unit> = _featureXEvent
     val featureYEvent: LiveData<Unit> = _featureYEvent
     val featureZEvent: LiveData<Unit> = _featureZEvent
+    val featurePractice: LiveData<Unit> = _featurePractice
 
     init {
         Timber.i("Got injected shared preferences: %s", sharedPreferences)
@@ -31,5 +33,9 @@ class FragmentAViewModel @ViewModelInject constructor(
 
     fun openFeatureZClicked() {
         _featureZEvent.value = Unit
+    }
+
+    fun openPracticeClicked(){
+        _featurePractice.value = Unit
     }
 }
